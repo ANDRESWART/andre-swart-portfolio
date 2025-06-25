@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/665/665939.png" type="image/png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Andre Swart Portfolio</title>
@@ -10,10 +11,10 @@
     html { scroll-behavior: smooth; }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-gray-50 text-gray-900 font-sans transition-colors duration-300" x-data="{ dark: false }" :class="{ 'bg-gray-900 text-white': dark, 'bg-gray-50 text-gray-900': !dark }" x-init="dark = JSON.parse(localStorage.getItem('theme')) || false" @keydown.window.ctrl.d.prevent="dark = !dark; localStorage.setItem('theme', JSON.stringify(dark))">
   <nav class="bg-white shadow-md sticky top-0 z-10">
     <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <div class="text-2xl font-extrabold text-blue-700 tracking-tight">A|S Docs</div>
+      <div class="text-2xl font-extrabold text-blue-700 tracking-tight">A|S Docs</div><button @click="dark = !dark; localStorage.setItem('theme', JSON.stringify(dark))" class="ml-6 px-2 py-1 rounded text-sm border border-blue-600 text-blue-600 hover:bg-blue-100 dark:border-white dark:text-white dark:hover:bg-gray-800">Toggle Theme</button>
       <div class="space-x-6 text-blue-600 font-medium">
         <a href="#sops" class="hover:underline">SOPs</a>
         <a href="#manuals" class="hover:underline">User Manuals</a>
@@ -83,5 +84,6 @@
     <p>&copy; 2025 Andre Swart | Documentation that delivers.</p>
     <a href="#top" class="block text-blue-600 hover:underline mt-2">Back to top ↑</a>
   </footer>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </body>
 </html>
