@@ -6,62 +6,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Andre Swart Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
-  <div class="p-6 max-w-4xl mx-auto space-y-6">
-    <header class="text-center">
-      <h1 class="text-4xl font-bold text-blue-800">Andre Swart</h1>
-      <p class="text-lg text-gray-600">Technical Writer | SOPs & User Manuals | Remote Work</p>
-      <div class="mt-4 flex justify-center space-x-4">
-        <a href="mailto:swart.andre@gmail.com" class="text-blue-600 hover:underline">Email</a>
-        <a href="https://www.linkedin.com/in/andrelogistics/" class="text-blue-600 hover:underline" target="_blank">LinkedIn</a>
-        <a href="Andre_Swart_CV.pdf" download class="text-blue-600 hover:underline">Download Resume</a>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <nav class="bg-white shadow-md sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-2xl font-extrabold text-blue-700 tracking-tight">A|S Docs</div>
+      <div class="space-x-6 text-blue-600 font-medium">
+        <a href="#sops" class="hover:underline">SOPs</a>
+        <a href="#manuals" class="hover:underline">User Manuals</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+        <a href="Andre_Swart_CV.pdf" download class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">Download CV</a>
       </div>
-    </header>
+    </div>
+  </nav>
 
-    <section>
-      <h2 class="text-2xl font-semibold text-blue-700 mt-10">Standard Operating Procedures (SOPs)</h2>
-      <div class="space-y-4 mt-4">
-        <div>
-          <h3 class="text-xl font-medium">Podcast Episode Publishing Workflow</h3>
-          <p>Ensure smooth, timely publication of each podcast episode with consistent branding and quality.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-medium">SEO Blog Post Publishing SOP (Client Site)</h3>
-          <p>Publish optimized blog posts to improve client’s organic search visibility.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-medium">Etsy Order Fulfillment for Print-on-Demand</h3>
-          <p>Automate and fulfill orders for a POD Etsy store efficiently.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-medium">CRM Cleanup SOP (for Freelance Admin VA)</h3>
-          <p>Keep client’s CRM clean and up-to-date to avoid duplicate data.</p>
-        </div>
-      </div>
-    </section>
+  <header class="text-center py-12 bg-blue-100">
+    <h1 class="text-4xl font-bold text-blue-800">Andre Swart</h1>
+    <p class="text-lg text-gray-700 mt-2">Technical Writer | SOPs & User Manuals | Remote Work</p>
+  </header>
 
-    <section>
-      <h2 class="text-2xl font-semibold text-blue-700 mt-10">User Manuals</h2>
-      <div class="space-y-4 mt-4">
-        <div>
-          <h3 class="text-xl font-medium">Freelance Time Tracking Software (TimeFox Lite)</h3>
-          <p>Guide for freelancers to log hours, manage clients, and generate invoices.</p>
+  <main class="max-w-4xl mx-auto p-6 space-y-12">
+    <section id="sops">
+      <h2 class="text-3xl font-semibold text-blue-700 mb-6">Standard Operating Procedures (SOPs)</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-4 bg-white rounded-xl shadow hover:shadow-md transition">
+          <div class="text-xl font-bold text-gray-800">🎙 Podcast Publishing Workflow</div>
+          <p class="text-gray-600 mt-2">A clear workflow to ensure timely and professional podcast episode releases.</p>
         </div>
-        <div>
-          <h3 class="text-xl font-medium">Shopify Product Upload for Freelance Sellers</h3>
-          <p>Step-by-step guide for uploading and optimizing new product listings on Shopify.</p>
+        <div class="p-4 bg-white rounded-xl shadow hover:shadow-md transition">
+          <div class="text-xl font-bold text-gray-800">🔍 SEO Blog Post SOP</div>
+          <p class="text-gray-600 mt-2">Optimize and publish blog content to improve organic reach.</p>
         </div>
-        <div>
-          <h3 class="text-xl font-medium">Zoom for Remote Team Meetings</h3>
-          <p>Beginner-friendly guide for using Zoom to attend and schedule team meetings.</p>
+        <div class="p-4 bg-white rounded-xl shadow hover:shadow-md transition">
+          <div class="text-xl font-bold text-gray-800">🛒 Etsy Order Fulfillment</div>
+          <p class="text-gray-600 mt-2">Automate and manage print-on-demand order processing.</p>
+        </div>
+        <div class="p-4 bg-white rounded-xl shadow hover:shadow-md transition">
+          <div class="text-xl font-bold text-gray-800">📇 CRM Cleanup SOP</div>
+          <p class="text-gray-600 mt-2">Maintain clean, accurate CRM records for client interactions.</p>
         </div>
       </div>
     </section>
 
-    <footer class="text-center text-gray-500 text-sm mt-10">
-      <p>&copy; 2025 Andre Swart | Available for freelance technical writing and documentation work</p>
-    </footer>
-  </div>
+    <section id="manuals">
+      <h2 class="text-3xl font-semibold text-blue-700 mb-6 mt-16">User Manuals</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-4 bg-white rounded-xl shadow hover:shadow-md transition">
+          <div class="text-xl font-bold text-gray-800">⏱ TimeFox Lite – Time Tracking</div>
+          <p class="text-gray-600 mt-2">Track hours, manage tasks, and invoice clients with ease.</p>
+        </div>
+        <div class="p-4 bg-white rounded-xl shadow hover:shadow-md transition">
+          <div class="text-xl font-bold text-gray-800">🛍 Shopify Product Upload</div>
+          <p class="text-gray-600 mt-2">Guide to uploading and optimizing listings in Shopify.</p>
+        </div>
+        <div class="p-4 bg-white rounded-xl shadow hover:shadow-md transition">
+          <div class="text-xl font-bold text-gray-800">📞 Zoom for Team Meetings</div>
+          <p class="text-gray-600 mt-2">Step-by-step help for joining and hosting Zoom calls.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="mt-20 text-center">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-2">Get in Touch</h2>
+      <p class="text-gray-700 mb-4">Let's collaborate or connect for remote freelance opportunities.</p>
+      <div class="flex justify-center space-x-6">
+        <a href="mailto:swart.andre@gmail.com" class="text-blue-600 hover:underline text-lg">📧 Email</a>
+        <a href="https://www.linkedin.com/in/andrelogistics/" target="_blank" class="text-blue-600 hover:underline text-lg">🔗 LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-gray-500 text-sm mt-16 mb-6">
+    <p>&copy; 2025 Andre Swart | Documentation that delivers.</p>
+    <a href="#top" class="block text-blue-600 hover:underline mt-2">Back to top ↑</a>
+  </footer>
 </body>
 </html>
